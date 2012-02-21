@@ -1,0 +1,66 @@
+package de.codecentric.wwm.model;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+import de.codecentric.wwm.QuestionRepositoryReader;
+
+public class QuestionRepositoryReaderTest {
+
+	QuestionRepositoryReader repoReader;
+	
+	@Before
+	public void setUp() {
+		InputStream is = null;
+		try {
+			is = new FileInputStream("res/raw/fragenkatalog.txt");
+		} catch (FileNotFoundException e) {
+			fail(e.getMessage());
+		}
+		repoReader = new QuestionRepositoryReader(is);
+	}	
+	
+	@Test
+	public void getRepositoryFromFile() {
+		QuestionRepository repo = repoReader.getRepository();
+		assertNotNull(repo);
+	}
+
+	@Test
+	public void getNextElementReturnsValidElement() {
+		Question q = repoReader.getNextElement();
+		assertNotNull(q);
+		assertNotNull(q.getQuestion());
+		assertNotNull(q.getOptions()[0]);
+		assertNotNull(q.getOptions()[1]);
+		assertNotNull(q.getOptions()[2]);
+		assertNotNull(q.getOptions()[3]);
+		assertTrue(q.getLevel()>0);
+	}
+	
+	@Test
+	public void getIsSingleQuestionValid() {
+		try {
+			QuestionRepositoryReader singleQuestionRepositoryReader = new QuestionRepositoryReader(new FileInputStream("res/raw/eine_frage.txt"));
+			Question q = singleQuestionRepositoryReader.getNextElement();
+			assertNotNull(q);
+			assertEquals(1, q.getLevel());
+			assertEquals(2, q.getCorrectAnswer());
+			assertEquals("Wer gilt allgemein als der bedeutendste Physiker des 20. Jahrhunderts?", q.getQuestion());
+			assertEquals(q.getOptions()[0],"Sandstein");
+			assertEquals(q.getOptions()[1],"Einstein");
+			assertEquals(q.getOptions()[2],"Zweistein");
+			assertEquals(q.getOptions()[3],"Edelstein");
+		} catch (FileNotFoundException e) {
+			fail(e.getMessage());
+		}
+	}
+
+		
+		
+}

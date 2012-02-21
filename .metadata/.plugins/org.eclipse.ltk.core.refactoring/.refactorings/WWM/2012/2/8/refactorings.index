@@ -1,0 +1,5 @@
+1329730754747	Extract local variable 'resultClickListener'
+1329732519800	Rename local variable 'q'
+1329751047319	Rename method 'initRepository'
+1329751624567	Rename field 'correctAnswer'
+1329751658628	Rename local variable 'answer'

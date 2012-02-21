@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Dokumente und Einstellungen\lru\Eigene Dateien\My Dropbox\IHK_Workshop\workspace\.metadata\.plugins\org.eclipse.jdt.core
+2380175872.index
+4254707024.index
+3426783816.index
+2130870124.index

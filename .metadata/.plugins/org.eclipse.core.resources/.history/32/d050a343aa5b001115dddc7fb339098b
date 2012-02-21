@@ -1,0 +1,57 @@
+package de.codecentric.wwm;
+
+import java.io.InputStream;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import de.codecentric.wwm.model.Question;
+import de.codecentric.wwm.model.QuestionRepository;
+
+public class WWMActivity extends Activity {
+	QuestionRepository repository;
+	private int level = 0;
+	
+	View.OnClickListener resultClickListener = new View.OnClickListener() {
+        public void onClick(View v) {
+     	    Button clickedResult = (Button)v;
+     	    
+        }
+    };
+    
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        initRepository();
+        displayNextQuestion();
+        final Button button = (Button) findViewById(R.id.myButton);  
+        
+		button.setOnClickListener(resultClickListener); 
+        
+    }
+
+	private void initRepository() {
+		InputStream is = this.getResources().openRawResource(R.raw.fragenkatalog);
+		QuestionRepositoryReader qr = new QuestionRepositoryReader(is);
+		repository = qr.getRepository();
+	}
+	
+	private void displayNextQuestion() {
+		level ++;
+		Question q = repository.getRandomQuestion(level);
+		TextView tvQuestion = (TextView) findViewById(R.id.tvQuestion);
+		tvQuestion.setText(q.getQuestion());
+		Button btOption1 = (Button) findViewById(R.id.btOption1);
+		btOption1.setText(q.getOptions()[0]);
+		Button btOption2 = (Button) findViewById(R.id.btOption2);
+		btOption2.setText(q.getOptions()[1]);
+		Button btOption3 = (Button) findViewById(R.id.btOption3);
+		btOption3.setText(q.getOptions()[2]);
+		Button btOption4 = (Button) findViewById(R.id.btOption4);
+		btOption4.setText(q.getOptions()[3]);
+	}
+
+}

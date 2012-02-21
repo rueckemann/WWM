@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Dies ist der FastFoodFinder. - Klicken Sie auf den Button um die Karte zu öffnen.</string>
+    <string name="app_name">FastFoodFinder</string>
+    
+    <string name="mapButtonLabel">Karte anzeigen</string>
+    <string name="lb_ort">Ort:</string>
+</resources>

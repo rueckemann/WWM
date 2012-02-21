@@ -1,0 +1,8 @@
+1329153857968	Rename resource 'RepositoryReader.java'
+1329155862890	Extract method 'isComment'
+1329162885375	Extract local variable 'randomNumber'
+1329164123203	Rename method 'getAnswer'
+1329164133343	Rename method 'setAnswer'
+1329164145703	Rename field 'answer'
+1329165045250	Change Layout
+1329165885484	Rename method 'init'

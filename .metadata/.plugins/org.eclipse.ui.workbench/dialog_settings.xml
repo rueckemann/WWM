@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="56" key="DIALOG_Y_ORIGIN"/>
+		<item value="299" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+		</list>
+	</section>
+	<section name="ShowViewDialog">
+		<item value="280" key="DIALOG_WIDTH"/>
+		<item value="com.android.ide.eclipse.ddms.views.OldLogCatView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="146" key="DIALOG_Y_ORIGIN"/>
+		<item value="442" key="DIALOG_X_ORIGIN"/>
+		<item value="414" key="DIALOG_HEIGHT"/>
+		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.android.ide.eclipse.ddms.views.category"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+	</section>
+</section>

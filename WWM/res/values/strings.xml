@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wer wird Millionär?</string>
+
+    <string name="frage">Default Frage</string>
+    <string name="stufe">Stufe 1</string>
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="option3">Option 3</string>
+    <string name="option4">Option 3</string>
+    
+    <string name="retry">Noch einmal</string>
+</resources>

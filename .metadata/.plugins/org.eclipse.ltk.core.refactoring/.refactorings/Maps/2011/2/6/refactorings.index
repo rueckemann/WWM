@@ -1,0 +1,6 @@
+1297542870921	Rename local variable 'youMarker'
+1297542887984	Rename local variable 'currentPosition'
+1297543027468	Rename type 'PeopleOverlay'
+1297543707781	Rename local variable 'yourPosition'
+1297544043812	Rename method 'getPoint'
+1297544051984	Rename method 'getPointFromLocation'

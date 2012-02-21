@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+       
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/Layout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frage" />
+
+		<Button
+            android:id="@+id/btOption1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background=”@drawable/button_selector”
+            android:text="@string/option1" />
+    <Button
+        android:id="@+id/btOption2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option2" />
+    <Button
+        android:id="@+id/btOption3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option3" />
+ 
+    <Button
+        android:id="@+id/btOption4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option4" />
+<RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="1" 
+        android:numStars="7" />
+
+
+</LinearLayout>

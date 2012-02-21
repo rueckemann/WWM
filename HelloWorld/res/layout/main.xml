@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+
+<Button android:id="@+id/myButton"
+		android:text="click me"
+		android:typeface="serif" android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+
+
+<Button android:id="@+id/buttonSet24h"
+		android:text="switch to 24h"
+		android:typeface="serif" android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+		
+<TimePicker android:id="@+id/myTimePicker"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+		
+
+				
+
+	<CheckBox android:id="@+id/myCheckBox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:checked="true"
+		android:text="check me" />
+
+	<DatePicker android:id="@+id/myDatePicker"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+		
+	<EditText android:id="@+id/myTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="This is my text content!"
+		/>
+	 
+	<ImageButton android:id="@+id/myImageButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/icon" />
+		
+	<RadioButton android:id="@+id/myRadioButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:checked="true"
+		android:text="click me too"
+		 />
+		 		
+</LinearLayout>

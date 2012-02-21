@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+   
+   <style name="WWM_Style" parent="android:style/Theme.Black">     
+       
+	    <item name="android:textSize">14sp</item>
+
+	    	    <item name="android:textColor">#F7BE45</item>
+	    <item name="android:textStyle">bold</item>
+       <!--   
+        <item name="android:windowTitleBackgroundStyle">@color/titlebackgroundcolor</item>   
+ -->    </style>
+    
+</resources>

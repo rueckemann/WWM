@@ -1,0 +1,75 @@
+package de.codecentric.wwm;
+
+import java.io.InputStream;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+import de.codecentric.wwm.model.Question;
+import de.codecentric.wwm.model.QuestionRepository;
+
+public class WWMActivity extends Activity {
+	QuestionRepository repository;
+	Question currentQuestion;
+	private int level = 0;
+	
+	View.OnClickListener resultClickListener = new View.OnClickListener() {
+        public void onClick(View v) {
+     	    Button clickedResult = (Button)v;
+     	    if(isAnswerValid(clickedResult)) {
+     	    	Toast.makeText(getBaseContext(), "Correct!", Toast.LENGTH_SHORT).show();
+     	    } else {
+     	    	Toast.makeText(getBaseContext(), "You are wrong", Toast.LENGTH_SHORT).show();
+     	    }
+        }
+
+    };
+    
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        initRepository();
+        displayNextQuestion();
+        Button button = (Button) findViewById(R.id.btOption1);       
+		button.setOnClickListener(resultClickListener); 
+		button = (Button) findViewById(R.id.btOption2);
+		button.setOnClickListener(resultClickListener);
+		button = (Button) findViewById(R.id.btOption3);
+		button.setOnClickListener(resultClickListener);
+		button = (Button) findViewById(R.id.btOption4);
+		button.setOnClickListener(resultClickListener);
+		
+        
+    }
+
+	private void initRepository() {
+		InputStream is = this.getResources().openRawResource(R.raw.fragenkatalog);
+		QuestionRepositoryReader qr = new QuestionRepositoryReader(is);
+		repository = qr.getRepository();
+	}
+	
+	private void displayNextQuestion() {
+		level ++;
+		currentQuestion = repository.getRandomQuestion(level);
+		TextView tvQuestion = (TextView) findViewById(R.id.tvQuestion);
+		tvQuestion.setText(currentQuestion.getQuestion());
+		Button btOption1 = (Button) findViewById(R.id.btOption1);
+		btOption1.setText(currentQuestion.getOptions()[0]);
+		Button btOption2 = (Button) findViewById(R.id.btOption2);
+		btOption2.setText(currentQuestion.getOptions()[1]);
+		Button btOption3 = (Button) findViewById(R.id.btOption3);
+		btOption3.setText(currentQuestion.getOptions()[2]);
+		Button btOption4 = (Button) findViewById(R.id.btOption4);
+		btOption4.setText(currentQuestion.getOptions()[3]);
+	}
+
+	private boolean isAnswerValid(Button clickedResult) {
+		
+		return false;
+	}
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+   
+   <style name="WWM_Style" parent="android:Theme">     
+        
+        <item name="android:textAppearance">@style/WWM_TextAppearance</item>
+        
+        <item name="android:windowTitleBackgroundStyle">@color/titlebackgroundcolor</item> 
+        <item name="android:background">@color/blue</item>  
+        <item name="android:windowBackground">@color/black</item>
+    		<item name="android:colorBackground">@color/red</item>
+    </style>
+    
+   <style name="WWM_DefaultTextAppearance" parent="@android:style/TextAppearance">
+	    <item name="android:textSize">12sp</item>
+	    <item name="android:textColor">#333</item>
+	    <item name="android:textStyle">bold</item>
+	  </style>
+</resources>

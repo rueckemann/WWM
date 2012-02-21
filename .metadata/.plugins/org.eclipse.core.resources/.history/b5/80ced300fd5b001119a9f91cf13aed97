@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WWM_Style" parent="android:Theme.Light"> 
+        <item name="android:windowTitleBackgroundStyle">@style/WWM_Style</item> 
+          
+    </style> 
+</resources>

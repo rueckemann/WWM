@@ -1,0 +1,188 @@
+# Wer wird Millionaer
+# 
+#
+# Struktur der einzelnen Fragesaetze: 
+#  - jede Angabe in eine neue Zeile
+#  - die einzelnen Fragen muessen durch eine Kommentarzeile getrennt werden,
+#  - Kommentarzeilen beginnen mit #
+#  - Ein Datensatz besteht aus folgenden Feldern (in dieser Reihenfolge)
+#
+# Schwierigkeitsgrad [1 - n]
+# Buchstabe der richtigen Antwort
+# Frage
+# Antwort A
+# Antwort B
+# Antwort C
+# Antwort D
+
+
+1
+B
+Wer gilt allgemein als der bedeutendste Physiker des 20. Jahrhunderts?
+Sandstein
+Einstein
+Zweistein
+Edelstein
+#
+1
+C
+Welche Fischart lebt im Süßwasser?
+Thunfisch
+Backfisch
+Goldfisch
+Frischfisch
+#
+1
+D
+Welches ist kein Holzblasinstrument?
+Oboe
+Fagott
+Saxophon
+Trompete
+#
+1
+C
+Wer betrat als erster Mensch den Mond?
+Aldrin
+Gagarin
+Armstrong
+Young
+#
+1
+B
+Welches ist kein Betriebssytem für Computer?
+Linux
+Pollux
+Solaris
+Windows
+#
+2
+D
+Was hat nichts mit Computerspeichern zu tun ?
+RAM
+DDR
+ROM
+REM
+#
+2
+B
+Wieviele Saiten hat eine Ukulele?
+2
+4
+6
+12
+#
+2
+C
+Was hat nichts mit Medizin zu tun?
+Angiographie
+Kardiographie
+Kartographie
+Enzephalographie
+#
+2
+A
+Wer war der Endspielgegner von Deutschland bei der Fußballweltmeisterschaft 1974?
+Holland
+Polen
+Argentinien
+DDR
+#
+3
+B
+Welches ist die kleinste Primzahl?
+1
+2
+3
+4
+#
+2
+B
+Womit beschäftigt sich ein Ornithologe?
+Katzen
+Vögel
+Schmetterlinge
+Fische
+#
+2
+B
+Wieviele Ecken hat eine Pentagramm?
+3
+5
+7
+11
+#
+3
+C
+Welcher der Genannten ist von Haus aus kein Physiker?
+Weizsäcker
+Schrödinger
+Hahn
+Planck
+#
+3
+C
+Welches ist kein Komet?
+Halley
+Shoemaker-Levy
+Voyager
+Hale-Bop
+#
+3
+B
+Wann wurde die erste kontrollierte atomare Kettenreaktion in Gang gesetzt?
+1924
+1942
+1945
+1954
+#
+3
+C
+Wer war kein Mathematiker?
+Thales
+Euklid
+Sophokles
+Aristoteles
+#
+3
+A
+Welches ist ein Primzahlzwilling?
+101 - 103
+31 -41
+1 - 2
+39 - 41
+#
+1
+B
+Peter Kreuder komponierte 1936 den Schlager "Ich wollt' ich wär' ein ..."?
+Hund
+Huhn
+Hummer
+Huflattich
+#
+2
+A
+Wobei handelt es sich um ein Notsignal im internationalen Funkverkehr?
+MaydayDown TownJetsetFlower Power
+#
+1
+C
+Wie heißt - laut einem Märchen der Brüder Grimm - die Schwester von Schneeweißchen?
+FliederlilaMaisgelbRosenrotKornblumenblau
+#
+3
+C
+Wer hat von Berufs wegen mit dem Spritzenhaus zu tun?
+Gärtner
+KrankenschwesterFeuerwehrmannKonditor
+#
+3
+D
+Was ist die Amtssprache von Mexiko?
+PortugiesischEnglischFranzösischSpanisch
+#
+3
+C
+Unter welchem Namen sangen Wigald Boning und Olli Dittrich "Lieder, die die Welt nicht braucht"?
+Die BehämmertenDie AbgedrehtenDie DoofenDie Irren
+#

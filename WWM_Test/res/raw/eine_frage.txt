@@ -1,0 +1,26 @@
+# Wer wird Millionaer
+# 
+#
+# Struktur der einzelnen Fragesaetze: 
+#  - jede Angabe in eine neue Zeile
+#  - die einzelnen Fragen muessen durch eine Kommentarzeile getrennt werden,
+#  - Kommentarzeilen beginnen mit #
+#  - Ein Datensatz besteht aus folgenden Feldern (in dieser Reihenfolge)
+#
+# Schwierigkeitsgrad [1 - n]
+# Buchstabe der richtigen Antwort
+# Frage
+# Antwort A
+# Antwort B
+# Antwort C
+# Antwort D
+
+
+1
+B
+Wer gilt allgemein als der bedeutendste Physiker des 20. Jahrhunderts?
+Sandstein
+Einstein
+Zweistein
+Edelstein
+#

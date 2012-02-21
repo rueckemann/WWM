@@ -1,0 +1,47 @@
+package de.codecentric.wwm.model;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+
+public class QuestionRepository {
+
+	private static final int LEVEL_COUNT = 8;
+	private final Map<Integer, List<Question>>questions = new HashMap<Integer, List<Question>>();
+	private final Random random = new Random();
+	private int maxLevel = 0;
+	
+	public QuestionRepository() {
+		for(int i = 1; i <= LEVEL_COUNT; i++) {
+		  questions.put(new Integer(i), new ArrayList<Question>());
+		}
+	}
+	
+	/**
+	 * returns a question of the defined level or null if no question of this level exists
+	 * @param level
+	 * @return
+	 */
+	public Question getRandomQuestion(Integer level) {
+		int randomNumber = getRandomNumber(level);
+		return randomNumber >= 0 ? questions.get(level).get(randomNumber) : null; 
+	}
+
+	public void addQuestion(Question q) {
+		if(q!=null) {
+			questions.get(q.getLevel()).add(q);
+			if (q.getLevel() > maxLevel) { 
+				maxLevel = q.getLevel();
+			}
+		}
+	}
+	
+	private int getRandomNumber(int level) {		
+		int questionCount = questions.get(level).size();
+        return questionCount > 0 ? random.nextInt(questionCount) : -1;
+	}
+
+	
+}

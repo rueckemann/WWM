@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frage" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="1" 
+        android:numStars="7" />
+
+   <!--  <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        
+
+    </TableRow> -->
+		<Button
+            android:id="@+id/btOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option1" />
+    <Button
+        android:id="@+id/btOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option2" />
+
+    <Button
+        android:id="@+id/btOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option3" />
+
+    <Button
+        android:id="@+id/btOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option4" />
+
+</TableLayout>

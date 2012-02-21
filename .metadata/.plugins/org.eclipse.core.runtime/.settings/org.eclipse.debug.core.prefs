@@ -1,0 +1,4 @@
+#Mon Feb 20 11:47:54 CET 2012
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="findViewById(R.string.frage)"/>\r\n<expression enabled\="true" text\="clickedResult.getId()"/>\r\n<expression enabled\="true" text\="R.id.btOption1"/>\r\n<expression enabled\="true" text\="R.id.btOption2"/>\r\n<expression enabled\="true" text\="R.id.btOption3"/>\r\n<expression enabled\="true" text\="R.id.btOption4"/>\r\n</watchExpressions>\r\n
+eclipse.preferences.version=1
+org.eclipse.debug.core.PREF_DELETE_CONFIGS_ON_PROJECT_DELETE=false
